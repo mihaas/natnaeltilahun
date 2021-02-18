@@ -1,0 +1,42 @@
+body
+{
+	background-image: url("../images/tesla-roadster.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.container {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+li{
+	display: inline-block;
+}
+
+li a{
+	text-decoration: none;
+	display: inline-block;
+	color: rgb(189, 58, 58);
+	font-family: Courier New;
+	font-weight: lighter;
+	font-size: 30px;
+	padding: 0 20px;
+}
+
+.ppp::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background:rgb(189, 58, 58);
+	transition: width .3s
+}
+
+.ppp:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
